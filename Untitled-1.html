@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Língua Portuguesa</title>
+
+  <!-- Fonte moderna do Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f4f7fa, #e9eef2);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #004080, #0066cc);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 8px 12px;
+      transition: background 0.3s ease, color 0.3s ease;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #ffecb3;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+    }
+
+    h2 {
+      color: #004080;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    button {
+      padding: 10px 25px;
+      background: linear-gradient(135deg, #0066cc, #004080);
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 30px;
+      font-size: 16px;
+      margin-top: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .quiz-container {
+      margin-top: 20px;
+    }
+
+    .question {
+      font-weight: bold;
+      margin-top: 20px;
+      color: #333;
+    }
+
+    .answer {
+      margin: 8px 0;
+      cursor: pointer;
+      padding: 12px;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .answer:hover {
+      background-color: #d8e9ff;
+    }
+
+    .correct {
+      background-color: #c8f7c5 !important;
+    }
+
+    .incorrect {
+      background-color: #f5c6cb !important;
+    }
+
+    .result {
+      margin-top: 25px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #004080;
+      background-color: #e0efff;
+      padding: 12px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    audio {
+      margin-top: 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🌐 Língua Portuguesa</h1>
+    <nav>
+      <ul>
+        <li><a href="#origem">📜 Origem</a></li>
+        <li><a href="#caracteristicas">🧬 Características</a></li>
+        <li><a href="#paises">🌍 Países</a></li>
+        <li><a href="#diferencas">🔤 Diferenças</a></li>
+        <li><a href="#quiz">❓ Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="origem">
+      <h2>📜 Origem</h2>
+      <p>A Língua Portuguesa surgiu do latim vulgar, trazido à Península Ibérica pelos romanos. Com o tempo, foi influenciada por línguas como árabe, celta e germânico.</p>
+    </section>
+
+    <section id="caracteristicas">
+      <h2>🧬 Características</h2>
+      <ul>
+        <li>É uma língua românica, derivada do latim.</li>
+        <li>Possui acentuação gráfica e regras gramaticais complexas.</li>
+        <li>Conta com tempos verbais variados e estruturas formais e informais.</li>
+      </ul>
+      <p><strong>Ouça a pronúncia da palavra "Português":</strong></p>
+      <audio controls>
+        <source src="https://upload.wikimedia.org/wikipedia/commons/d/d8/LL-Q5146_%28por%29-Klabautermann-idioma_portugu%C3%AAs.wav" type="audio/wav">
+        Seu navegador não suporta áudio.
+      </audio>
+    </section>
+
+    <section id="paises">
+      <h2>🌍 Países que falam Português</h2>
+      <ul>
+        <li>🇧🇷 Brasil</li>
+        <li>🇵🇹 Portugal</li>
+        <li>🇦🇴 Angola</li>
+        <li>🇲🇿 Moçambique</li>
+        <li>🇨🇻 Cabo Verde</li>
+        <li>🇬🇼 Guiné-Bissau</li>
+        <li>🇸🇹 São Tomé e Príncipe</li>
+        <li>🇹🇱 Timor-Leste</li>
+        <li>🇬🇶 Guiné Equatorial</li>
+      </ul>
+    </section>
+
+    <section id="diferencas">
+      <h2>🔤 Diferenças entre Português do Brasil e de Portugal</h2>
+      <ul>
+        <li><strong>Vocabulário:</strong> ônibus (BR) vs. autocarro (PT)</li>
+        <li><strong>Pronúncia:</strong> o "s" final é chiado no Brasil e mais seco em Portugal.</li>
+        <li><strong>Ortografia:</strong> Algumas palavras perderam o acento com o novo acordo ortográfico.</li>
+      </ul>
+    </section>
+
+    <section id="quiz">
+      <h2>❓ Quiz sobre a Língua Portuguesa</h2>
+      <div class="quiz-container">
+        <div class="question">1. Qual a origem da língua portuguesa?</div>
+        <div class="answer" onclick="responder(this, true)">Latim vulgar</div>
+        <div class="answer" onclick="responder(this, false)">Grego antigo</div>
+        <div class="answer" onclick="responder(this, false)">Hebraico</div>
+
+        <div class="question">2. Qual desses países tem o português como língua oficial?</div>
+        <div class="answer" onclick="responder(this, true)">Moçambique</div>
+        <div class="answer" onclick="responder(this, false)">Argentina</div>
+        <div class="answer" onclick="responder(this, false)">França</div>
+
+        <div class="question">3. Como se diz "ônibus" em Portugal?</div>
+        <div class="answer" onclick="responder(this, true)">Autocarro</div>
+        <div class="answer" onclick="responder(this, false)">Camioneta</div>
+        <div class="answer" onclick="responder(this, false)">Metro</div>
+
+        <div class="result" id="resultadoQuiz"></div>
+        <button onclick="reiniciarQuiz()">🔄 Reiniciar Quiz</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Site educativo sobre a Língua Portuguesa</p>
+  </footer>
+
+  <script>
+    let pontuacao = 0;
+    let respondidas = 0;
+
+    function responder(elemento, correta) {
+      const grupo = Array.from(elemento.parentNode.querySelectorAll(".answer")).filter(el => el.previousElementSibling === elemento.previousElementSibling);
+      grupo.forEach(el => el.onclick = null); // desativa clique
+
+      if (!elemento.classList.contains("correct") && !elemento.classList.contains("incorrect")) {
+        if (correta) {
+          elemento.classList.add("correct");
+          pontuacao++;
+        } else {
+          elemento.classList.add("incorrect");
+        }
+
+        respondidas++;
+
+        if (respondidas === 3) {
+          const resultado = document.getElementById("resultadoQuiz");
+          resultado.textContent = `🎯 Você acertou ${pontuacao} de 3 perguntas.`;
+        }
+      }
+    }
+
+    function reiniciarQuiz() {
+      pontuacao = 0;
+      respondidas = 0;
+      document.querySelectorAll(".answer").forEach(el => {
+        el.classList.remove("correct", "incorrect");
+        el.onclick = function () {
+          responder(el, el.textContent === "Latim vulgar" || el.textContent === "Moçambique" || el.textContent === "Autocarro");
+        };
+      });
+      document.getElementById("resultadoQuiz").textContent = "";
+    }
+  </script>
+</body>
+</html>
